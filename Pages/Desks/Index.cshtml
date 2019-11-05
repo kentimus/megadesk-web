@@ -1,0 +1,79 @@
+﻿@page
+@model MegaDeskWebWeek8.Pages.Desks.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Desk Quote List</h1>
+
+<p>
+    <a class="btn btn-primary" asp-page="Create">Create New</a>
+</p>
+
+<form>
+    <div class="row">
+        <div class="col-md-8">
+            <label class="sr-only">Search for Customer</label>
+            <input class="form-control" type="text" asp-for="SearchString" placeholder="Search for Customer..." />
+        </div>
+        <div class="col-md-4">
+            
+            <input class="btn btn-primary" type="submit" value="Search" />
+        </div>
+    </div>
+</form>
+<table class="table table-striped" id="quotes-list">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.DeskQuote[0].CustomerName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DeskQuote[0].orderDate)
+            </th>
+           
+            <th>
+                @Html.DisplayNameFor(model => model.DeskQuote[0].SurfaceMaterial)
+            </th>
+
+            <th>
+                @Html.DisplayNameFor(model => model.DeskQuote[0].rushDays)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DeskQuote[0].price)
+            </th>
+
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.DeskQuote) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.CustomerName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.orderDate)
+            </td>
+            
+            <td>
+                @Html.DisplayFor(modelItem => item.SurfaceMaterial)
+            </td>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.rushDays) days
+            </td>
+            <td>
+                $@Html.DisplayFor(modelItem => item.price)
+            </td>
+
+            <td>
+                <a class="btn btn-primary" asp-page="./Edit" asp-route-id="@item.ID">Edit</a>
+                <a class="btn btn-primary" asp-page="./Details" asp-route-id="@item.ID">Details</a>
+                <a class="btn btn-danger" asp-page="./Delete" asp-route-id="@item.ID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

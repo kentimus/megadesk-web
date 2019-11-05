@@ -1,0 +1,171 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+body {
+    background-color: #2a3132;
+    color: #90afc5;
+    font-family: Barlow;
+}
+
+h1, h2, h3 h4, h5, th {
+    font-family: Amiri;
+}
+
+h1.homepage-h1{
+    font-size : 80px;
+    text-align : center;
+}
+
+.navbar {
+    background-color: #763626;
+    color: white;
+}
+
+.navbar-brand {
+    color: white;
+    font-weight: 600;
+}
+
+
+a.nav-link {
+    color: white;
+}
+
+th, td {
+    font-size: 1.2rem;
+}
+
+.table {
+    background-color: #90afc5;
+}
+
+thead {
+    background-color: #763626;
+    color: white;
+}
+
+td {
+    color: #2a3132;
+}
+
+footer {
+    background-color: #763626;
+    color: white;
+}
+
+.btn.btn-primary {
+    background-color: #763626;
+}
+
+label {
+    margin-bottom: 0;
+}
+
+form {
+    margin-bottom: 30px;
+}
+
+
+
+.material {
+    height: 200px;
+    width: 100%;
+}
+
+.material-pine {
+    background: url(../images/pine.jpg);
+    background-size: cover;
+}
+
+.material-oak {
+    background: url(../images/oak.jpg);
+    background-size: cover;
+}
+
+.material-veneer {
+    background: url(../images/veneer.jpg);
+    background-size: cover;
+}
+
+.material-rosewood {
+    background: url(../images/rosewood.jpg);
+    background-size: cover;
+}
+
+.material-laminate {
+    background: url(../images/laminate.jpg);
+    background-size: cover;
+}
+
+
+a.navbar-brand {
+    white-space: normal;
+    text-align: center;
+    word-break: break-all;
+}
+
+/* Provide sufficient contrast against white background */
+a {
+    color: #0366d6;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+.border-top {
+    border-top: 1px solid #e5e5e5;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+    font-size: 1rem;
+    line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    line-height: 60px; /* Vertically center the text there */
+}
